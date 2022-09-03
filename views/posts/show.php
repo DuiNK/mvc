@@ -1,7 +1,7 @@
 
 
 <?php
-  echo "Tiêu đề: $post->title";
+  echo "Title: $post->title";
   echo "\n";
-  echo "Nội dung: $post->content";
+  echo "Text: $post->content";
 ?>
