@@ -12,15 +12,21 @@ class PagesController extends BaseController
 
   public function home()
   {
-    $data = array(
-      'name' => 'Sang Beo',
-      'age' => 22
-    );
-    $this->render('home', $data);
+    $this->render('home');
   }
 
   public function error()
   {
     $this->render('error');
+  }
+  
+  public function login()
+  {
+    $this->render('login');
+  }
+
+  public function signup()
+  {
+    $this->render('signup');
   }
 }

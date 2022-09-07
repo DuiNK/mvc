@@ -1,5 +1,4 @@
 
-
 <?php
 require_once('connection.php');
 
@@ -14,6 +13,4 @@ if (isset($_GET['controller'])) {
   $controller = 'pages';
   $action = 'home';
 }
-
 require_once('routes.php');
-?>

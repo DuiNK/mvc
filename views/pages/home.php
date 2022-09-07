@@ -1,5 +1,15 @@
+<?php 
+    include_once 'views/layouts/header.php'
+?>
 
+    <h1 id="index-text">Welcome, <?php if(isset($_SESSION['usersId'])){
+        echo explode(" ", $_SESSION['usersName'])[0];
+    }else{
+        echo 'Guest';
+    } 
+    ?> </h1>
+    
 
-<?php
-  echo "Tên tôi là: $name, năm nay tôi $age tuổi";
+<?php 
+    include_once 'views/layouts/footer.php'
 ?>
